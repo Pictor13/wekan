@@ -16,6 +16,7 @@ $.fn.escapeableTextComplete = function(strategies, options, ...otherArgs) {
       }
       return null;
     },
+    context(text) { return text.toLowerCase(); },
     ...options,
   };
 
